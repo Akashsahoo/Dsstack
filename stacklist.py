@@ -11,7 +11,14 @@ class Stack:
         if self.list == []:
             return True
         return False
-    
+
+    def peek(self):
+        if not self.isEmpty:
+            data = self.list[-1]
+            return data
+        
+        
+
     def push(self,value):
         self.list.append(value)
     
@@ -31,4 +38,4 @@ customstack.push(3)
 customstack.push(4)
 print(customstack)
 print(customstack.pop())
-print(customstack)
+print(customstack.peek())
